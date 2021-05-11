@@ -15,4 +15,4 @@ Abra o VS Code ou o Android já configurados com o flutter
 Instalação no Windows: https://flutter.dev/docs/get-started/install/windows
 Instalação no Linux: https://flutter.dev/docs/get-started/install/linux
 
-E rode o projeto com <F5>
+E rode o projeto com < F5 >
