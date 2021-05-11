@@ -1,4 +1,4 @@
-#Mon May 10 23:06:00 BRT 2021
+#Tue May 11 09:16:34 BRT 2021
 base.0=/home/andre/hd1/andre/Downloads/AulaTwitch/Flutter/app_firebase/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.1=classes2.dex
 renamed.1=classes2.dex
