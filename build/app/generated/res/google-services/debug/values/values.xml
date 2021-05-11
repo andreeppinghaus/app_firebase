@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">612825232062-a83opge3mfql5nir48n6t0vpv6bm7v4e.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">612825232062</string>
+    <string name="google_api_key" translatable="false">AIzaSyB5vfMwO6UyQs7EN7ssXuk1gLykx-nbOcw</string>
+    <string name="google_app_id" translatable="false">1:612825232062:android:f12d9389b282e3497ce4ef</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB5vfMwO6UyQs7EN7ssXuk1gLykx-nbOcw</string>
+    <string name="google_storage_bucket" translatable="false">livetwitch-340ca.appspot.com</string>
+    <string name="project_id" translatable="false">livetwitch-340ca</string>
+</resources>
