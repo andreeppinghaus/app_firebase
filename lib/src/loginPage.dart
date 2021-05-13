@@ -1,3 +1,4 @@
+import 'package:app_firebase/src/Principal.dart';
 import 'package:app_firebase/src/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -100,6 +101,9 @@ class _LoginPageState extends State<LoginPage> {
           .signInWithEmailAndPassword(email: email, password: password);
 
       print("Usuario ${userCredential.user.email} logado com sucesso");
+
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Principal()));
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');
