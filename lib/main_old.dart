@@ -53,6 +53,10 @@ Future<void> _register() async {
   }
 }
 
+// Future<void> resetPassword(String email) async {
+//   await _firebaseAuth.sendPasswordResetEmail(email: email);
+// }
+
 Future<void> _sigin() async {
   try {
     UserCredential userCredential = await FirebaseAuth.instance

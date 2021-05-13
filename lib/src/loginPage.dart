@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           TextField(
               controller: _password,
-              obscureText: true,
+              obscureText: false,
               decoration: InputDecoration(
                   border: InputBorder.none,
                   fillColor: Color(0xfff3f3f4),
@@ -93,20 +93,20 @@ class _LoginPageState extends State<LoginPage> {
     String email = _email.text;
     String password = _password.text;
     print("Email: ${email}");
-    print("Email: ${password}");
+    print("Password: ${password}");
 
-    // try {
-    //   UserCredential userCredential = await FirebaseAuth.instance
-    //       .signInWithEmailAndPassword(email: email, password: password);
+    try {
+      UserCredential userCredential = await FirebaseAuth.instance
+          .signInWithEmailAndPassword(email: email, password: password);
 
-    //   print("Usuario ${userCredential.user.email} logado com sucesso");
-    // } on FirebaseAuthException catch (e) {
-    //   if (e.code == 'user-not-found') {
-    //     print('No user found for that email.');
-    //   } else if (e.code == 'wrong-password') {
-    //     print('Wrong password provided for that user.');
-    //   }
-    // }
+      print("Usuario ${userCredential.user.email} logado com sucesso");
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found') {
+        print('No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        print('Wrong password provided for that user.');
+      }
+    }
   }
 
   Widget _submitButton() {
